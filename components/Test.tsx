@@ -11,9 +11,9 @@ import {
   Dimensions,
 } from "react-native";
 import Constants from "expo-constants";
-import AssetExample from "./components/AssetExample";
+import AssetExample from "./AssetExample";
 
-export default function App() {
+export default function Test() {
   const [isVerticalOrientation, setIsVerticalOrientation] = useState(true);
   const [firstInputText, setFirstInputText] = useState("Orientation");
   const [secondInputText, setSecondInputText] = useState("Width");
