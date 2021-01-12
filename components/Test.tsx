@@ -31,12 +31,15 @@ export default function Test() {
 
   return (
     <View
+      testID={"mainContainer"}
       onLayout={() => checkIfDeviceIsInVerticalOrHorizontalOrientation()}
       style={!isVerticalOrientation ? styles.containerRow : styles.container}
     >
       <AssetExample />
       <View>
         <TextInput
+          testID="firstInput"
+          accessibilityLabel="firstInput"
           value={firstInputText}
           style={styles.inputStyle}
           onChangeText={(text) => setFirstInputText(text)}
@@ -55,6 +58,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#ACACAC",
     justifyContent: "center",
     alignItems: "center",
+    flexDirection: "column",
     padding: 8,
   },
   containerRow: {
